@@ -1,5 +1,6 @@
 FROM ubuntu:trusty
 MAINTAINER to0w1r3d <to0w1r3d@gmail.com>
+# Original: Tim Haak - https://hub.docker.com/u/timhaak/
 
 RUN locale-gen en_US en_US.UTF-8
 
