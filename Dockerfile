@@ -16,6 +16,9 @@ RUN apt-get install -qy --force-yes sabnzbdplus sabnzbdplus-theme-classic sabnzb
 
 VOLUME /config
 VOLUME /data
+VOLUME /movies
+VOLUME /tv
+VOLUME /audio
 
 ADD ./start.sh /start.sh
 RUN chmod u+x  /start.sh
