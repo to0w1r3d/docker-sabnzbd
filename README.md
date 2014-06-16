@@ -22,6 +22,4 @@ VOLUME /audio
 
 ____________
 
-
-
-docker run -d -h your_host_name -v /your_config_location:/config -v /your_videos_location:/data -p 8080:8080 -p 9090:9090 sabnzbd
+docker run -d -h _hostname_ -v /_hostconfig_:/config -v /_hostdata_:/data -v /_hostmovielib_:/movies -v /_hosttvlib_:/tv -v /_hostaudiolib_:/audio -p 8080:8080 -p 9090:9090 sabnzbd
