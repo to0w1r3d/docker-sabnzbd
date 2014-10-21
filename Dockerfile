@@ -4,6 +4,7 @@ MAINTAINER to0w1r3d <to0w1r3d@gmail.com>
 
 RUN locale-gen en_US en_US.UTF-8
 
+RUN dpkg --clear-avail
 RUN apt-get -q update
 RUN apt-mark hold initscripts udev plymouth mountall
 RUN apt-get -qy --force-yes dist-upgrade
