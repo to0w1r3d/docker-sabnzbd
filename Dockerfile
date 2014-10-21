@@ -15,11 +15,10 @@ RUN add-apt-repository -y  ppa:jcfp/ppa
 
 RUN apt-get -q update
 
-#RUN apt-get install -qy --force-yes sabnzbdplus sabnzbdplus-theme-classic sabnzbdplus-theme-mobile sabnzbdplus-theme-plush par2 python-yenc unrar unzip 
-RUN apt-get install -qy --force-yes sabnzbdplus
-RUN apt-get install -qy --force-yes sabnzbdplus-theme-classic sabnzbdplus-theme-mobile sabnzbdplus-theme-plush
-RUN apt-get install -qy --force-yes par2 python-yenc unzip unrar
-
+RUN apt-get install -qy --force-yes sabnzbdplus sabnzbdplus-theme-classic sabnzbdplus-theme-mobile sabnzbdplus-theme-plush par2 python-yenc unrar unzip 
+#RUN apt-get install -qy --force-yes sabnzbdplus
+#RUN apt-get install -qy --force-yes sabnzbdplus-theme-classic sabnzbdplus-theme-mobile sabnzbdplus-theme-plush
+#RUN apt-get install -qy --force-yes par2 python-yenc unzip unrar
 
 VOLUME /config
 VOLUME /data
